@@ -995,6 +995,9 @@ function _Chat() {
         }
       });
     },
+    api_key: (text) => {
+      accessStore.update((access) => (access.openaiApiKey = text));
+    },
     settings: (text) => {
       if (accessStore.disableFastLink) return;
 

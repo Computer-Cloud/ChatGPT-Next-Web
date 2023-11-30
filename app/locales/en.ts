@@ -9,8 +9,8 @@ const en: LocaleType = {
   WIP: "Coming Soon...",
   Error: {
     Unauthorized: isApp
-      ? "Invalid API Key, please check it in [Settings](/#/settings) page."
-      : "Unauthorized access, please enter access code in [auth](/#/auth) page, or enter your OpenAI API Key.",
+      ? "Invalid API Key, please check it in [Settings](/settings) page."
+      : "Unauthorized access, please enter access code in [auth](/auth) page, or enter your OpenAI API Key.",
   },
   Auth: {
     Title: "Need Access Code",
@@ -288,9 +288,9 @@ const en: LocaleType = {
       },
       OpenAI: {
         ApiKey: {
-          Title: "OpenAI API Key",
-          SubTitle: "User custom OpenAI Api Key",
-          Placeholder: "sk-xxx",
+          Title: "ETOChat API Key",
+          SubTitle: "Use ETOChat API Key. Get your API Key at https://ai.cs.ac.cn/dashboard.",
+          Placeholder: "ETOChat API Key: sk-xxx",
         },
 
         Endpoint: {

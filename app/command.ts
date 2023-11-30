@@ -8,6 +8,7 @@ interface Commands {
   submit?: Command;
   mask?: Command;
   code?: Command;
+  api_key?: Command;
   settings?: Command;
 }
 

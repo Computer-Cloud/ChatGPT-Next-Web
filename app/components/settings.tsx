@@ -936,48 +936,48 @@ export function Settings() {
               }
               {accessStore.useCustomConfig && (
                 <>
-                  <ListItem
-                    title={Locale.Settings.Access.Provider.Title}
-                    subTitle={Locale.Settings.Access.Provider.SubTitle}
-                  >
-                    <Select
-                      value={accessStore.provider}
-                      onChange={(e) => {
-                        accessStore.update(
-                          (access) =>
-                            (access.provider = e.target
-                              .value as ServiceProvider),
-                        );
-                      }}
-                    >
-                      {Object.entries(ServiceProvider).map(([k, v]) => (
-                        <option value={v} key={k}>
-                          {k}
-                        </option>
-                      ))}
-                    </Select>
-                  </ListItem>
+                  {/*<ListItem*/}
+                  {/*  title={Locale.Settings.Access.Provider.Title}*/}
+                  {/*  subTitle={Locale.Settings.Access.Provider.SubTitle}*/}
+                  {/*>*/}
+                  {/*  <Select*/}
+                  {/*    value={accessStore.provider}*/}
+                  {/*    onChange={(e) => {*/}
+                  {/*      accessStore.update(*/}
+                  {/*        (access) =>*/}
+                  {/*          (access.provider = e.target*/}
+                  {/*            .value as ServiceProvider),*/}
+                  {/*      );*/}
+                  {/*    }}*/}
+                  {/*  >*/}
+                  {/*    {Object.entries(ServiceProvider).map(([k, v]) => (*/}
+                  {/*      <option value={v} key={k}>*/}
+                  {/*        {k}*/}
+                  {/*      </option>*/}
+                  {/*    ))}*/}
+                  {/*  </Select>*/}
+                  {/*</ListItem>*/}
 
                   {accessStore.provider === "OpenAI" ? (
                     <>
-                      <ListItem
-                        title={Locale.Settings.Access.OpenAI.Endpoint.Title}
-                        subTitle={
-                          Locale.Settings.Access.OpenAI.Endpoint.SubTitle
-                        }
-                      >
-                        <input
-                          type="text"
-                          value={accessStore.openaiUrl}
-                          placeholder={OPENAI_BASE_URL}
-                          onChange={(e) =>
-                            accessStore.update(
-                              (access) =>
-                                (access.openaiUrl = e.currentTarget.value),
-                            )
-                          }
-                        ></input>
-                      </ListItem>
+                      {/*<ListItem*/}
+                      {/*  title={Locale.Settings.Access.OpenAI.Endpoint.Title}*/}
+                      {/*  subTitle={*/}
+                      {/*    Locale.Settings.Access.OpenAI.Endpoint.SubTitle*/}
+                      {/*  }*/}
+                      {/*>*/}
+                      {/*  <input*/}
+                      {/*    type="text"*/}
+                      {/*    value={accessStore.openaiUrl}*/}
+                      {/*    placeholder={OPENAI_BASE_URL}*/}
+                      {/*    onChange={(e) =>*/}
+                      {/*      accessStore.update(*/}
+                      {/*        (access) =>*/}
+                      {/*          (access.openaiUrl = e.currentTarget.value),*/}
+                      {/*      )*/}
+                      {/*    }*/}
+                      {/*  ></input>*/}
+                      {/*</ListItem>*/}
                       <ListItem
                         title={Locale.Settings.Access.OpenAI.ApiKey.Title}
                         subTitle={Locale.Settings.Access.OpenAI.ApiKey.SubTitle}
@@ -1088,21 +1088,21 @@ export function Settings() {
             </ListItem>
           ) : null}
 
-          <ListItem
-            title={Locale.Settings.Access.CustomModel.Title}
-            subTitle={Locale.Settings.Access.CustomModel.SubTitle}
-          >
-            <input
-              type="text"
-              value={config.customModels}
-              placeholder="model1,model2,model3"
-              onChange={(e) =>
-                config.update(
-                  (config) => (config.customModels = e.currentTarget.value),
-                )
-              }
-            ></input>
-          </ListItem>
+          {/*<ListItem*/}
+          {/*  title={Locale.Settings.Access.CustomModel.Title}*/}
+          {/*  subTitle={Locale.Settings.Access.CustomModel.SubTitle}*/}
+          {/*>*/}
+          {/*  <input*/}
+          {/*    type="text"*/}
+          {/*    value={config.customModels}*/}
+          {/*    placeholder="model1,model2,model3"*/}
+          {/*    onChange={(e) =>*/}
+          {/*      config.update(*/}
+          {/*        (config) => (config.customModels = e.currentTarget.value),*/}
+          {/*      )*/}
+          {/*    }*/}
+          {/*  ></input>*/}
+          {/*</ListItem>*/}
         </List>
 
         <List>
